@@ -1,0 +1,28 @@
+:root {
+  --color-primary: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #6d5d4b;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3MvX2Jhc2Uuc2NzcyIsInN0eWxlLmNvbXAuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWdCQTtFQUNFLHFCQUFBO0FDZkY7O0FEa0JBO0VBQ0UsU0FBQTtFQUNBLFVBQUE7QUNmRjs7QURrQkE7OztFQUdFLG1CQUFBO0FDZkY7O0FEa0JBO0VBQ0Usc0JBQUE7RUFDQSxnQkFBQTtBQ2ZGOztBRGtCQTtFQUNFLGlDQXhCYTtFQXlCYixjQTVCa0I7RUE2QmxCLGdCQUFBO0VBQ0EsZ0JBQUE7QUNmRiIsImZpbGUiOiJzdHlsZS5wcmVmaXguY3NzIn0= */
