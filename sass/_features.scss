@@ -1,6 +1,16 @@
 @use "base" as *;
 
 .features {
-  background-color: $color-grey-light-2;
+  background-color: $color-grey-light-1;
   grid-column: center-start / center-end;
+
+  margin: 15rem 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  // we don't declare rows because they will be created implicitly
+  gap: 6rem;
+}
+
+.feature {
 }

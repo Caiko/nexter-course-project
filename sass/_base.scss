@@ -47,9 +47,4 @@ body {
     [center-end] minmax(6rem, 1fr) [full-end];
   // The two 1fr columns are used to push the content to the center
   // This is an alternative approach to the margin auto trick, which won't work with a sidebar
-
-  & > * {
-    padding: 4rem;
-    font-size: 3rem;
-  }
 }
