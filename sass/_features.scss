@@ -1,16 +1,34 @@
 @use "base" as *;
 
 .features {
-  background-color: $color-grey-light-1;
   grid-column: center-start / center-end;
 
   margin: 15rem 0;
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  // grid-template-columns: repeat(3, 1fr);
   // we don't declare rows because they will be created implicitly
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  // auto-fit will create as many columns as possible to fill the container
+  // minmax(25rem, 1fr) will create columns with a minimum width of 25rem and a maximum width of 1fr
   gap: 6rem;
+  align-items: start; // Properly aligns the items in the start of the row
 }
 
 .feature {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: 1.5rem 2.5rem;
+
+  &__icon {
+    fill: $color-primary;
+    width: 4.5rem;
+    height: 4.5rem;
+    grid-row: 1 / span 2;
+    transform: translateY(-1rem);
+  }
+
+  &__text {
+    font-size: 1.7rem;
+  }
 }
