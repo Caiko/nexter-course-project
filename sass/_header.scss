@@ -33,11 +33,35 @@
   }
 
   &__seenon-text {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    align-items: center;
+    gap: 1.5rem;
+
+    font-size: 1.6rem;
+    color: $color-grey-light-2;
+
+    &::before,
+    &::after {
+      content: "";
+      height: 1px;
+      // Create the line effect
+      display: block;
+      background-color: currentColor;
+      // Applies the already declared color of the parent element of the pseudo-element
+    }
   }
 
   &__seenon-logos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    justify-items: center;
+
     img {
       height: 2.5rem;
+      filter: brightness(70%);
+      // this will make the image darker
     }
   }
 }
