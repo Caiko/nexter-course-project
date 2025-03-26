@@ -16,9 +16,9 @@
   padding-top: 4rem;
 
   display: grid;
-  grid-template-rows: 1fr min-content 6rem 1fr;
+  grid-template-rows: 1fr min-content min-content 1fr;
   // this will push the rest of the content to the bottom
-  grid-template-columns: max-content;
+  grid-template-columns: minmax(min-content, max-content);
   gap: 1.5rem 0;
   justify-content: center;
 
@@ -57,9 +57,12 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
     justify-items: center;
+    align-items: center;
 
     img {
-      height: 2.5rem;
+      max-height: 2.5rem;
+      max-width: 100%;
+      // this will make the image responsive by not allowing it to overflow
       filter: brightness(70%);
       // this will make the image darker
     }
